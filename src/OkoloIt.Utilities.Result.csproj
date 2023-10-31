@@ -10,6 +10,7 @@
     <Description>Returns an object indicating success or failure of an operation instead of throwing/using exceptions.</Description>
     <AssemblyName>OkoloIt.Utilities.Result</AssemblyName>
     <PackageTags>Result</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
 </Project>
