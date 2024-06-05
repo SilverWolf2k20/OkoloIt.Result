@@ -10,7 +10,7 @@ static Result<int> GetPositiveNumber(int value)
 
 IResult<int> number = GetPositiveNumber(-5);
 
-if (number.Success)
+if (number.IsSuccess)
     Console.WriteLine($"Число: {number.Value}");
 else
     Console.WriteLine(number.Message);

@@ -16,7 +16,7 @@ namespace OkoloIt.Utilities.Result
         /// <param name="message">Сообщение результата.</param>
         protected Result(bool success, string message)
         {
-            Success = success;
+            IsSuccess = success;
             Message = message;
         }
 
@@ -27,7 +27,7 @@ namespace OkoloIt.Utilities.Result
         /// <summary>
         /// Ошибка.
         /// </summary>
-        public bool Error => !Success;
+        public bool IsFailed => !IsSuccess;
 
         /// <summary>
         /// Сообщение.
@@ -37,7 +37,7 @@ namespace OkoloIt.Utilities.Result
         /// <summary>
         /// Успех.
         /// </summary>
-        public bool Success { get; }
+        public bool IsSuccess { get; }
 
         #endregion Public Properties
 

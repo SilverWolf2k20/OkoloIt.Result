@@ -10,7 +10,7 @@
         /// <summary>
         /// Ошибка.
         /// </summary>
-        bool Error { get; }
+        bool IsFailed { get; }
 
         /// <summary>
         /// Сообщение.
@@ -20,7 +20,7 @@
         /// <summary>
         /// Успех.
         /// </summary>
-        bool Success { get; }
+        bool IsSuccess { get; }
 
         #endregion Public Properties
     }

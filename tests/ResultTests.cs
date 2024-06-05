@@ -13,7 +13,7 @@ internal sealed class ResultTests
         Result<int> result = Result.Fail("Error");
 
         Assert.Multiple(() => {
-            Assert.That(result.Success, Is.False);
+            Assert.That(result.IsSuccess, Is.False);
             Assert.That(result.Error, Is.True);
             Assert.That(string.IsNullOrEmpty(result.Message), Is.False);
         });
@@ -25,7 +25,7 @@ internal sealed class ResultTests
         Result<int> result = Result.Ok(7);
         
         Assert.Multiple(() => {
-            Assert.That(result.Success, Is.True);
+            Assert.That(result.IsSuccess, Is.True);
             Assert.That(result.Error, Is.False);
             Assert.That(string.IsNullOrEmpty(result.Message), Is.True);
             Assert.That(result.Value == default, Is.True);
